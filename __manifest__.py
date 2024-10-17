@@ -13,9 +13,9 @@
 
     'category': 'Manufacturing',
 
-    'author': 'Apollo Solutions',
+    'author': 'Ghayth Ali',
 
-    'website': 'https://www.apollo-solutions.net/',
+    'website': 'https://www.linkedin.com/in/ghayth-ali-al1710/',
 
     'depends': [
         'base',
