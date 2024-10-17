@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+        <record id="mrp_bom_view_form" model="ir.ui.view">
+            <field name="name">mrp.bom.view.form</field>
+            <field name="model">mrp.bom</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="mrp.mrp_bom_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form/sheet/div[@name='button_box']" position="inside">
+                    <button name="button_mrp_eco" type="object" class="oe_stat_button" icon="fa-cogs">
+                        <field name="eco_count" string="ECO(s)" widget="statinfo"/>
+                    </button>
+                </xpath>
+                <xpath expr="//form/sheet/notebook/page[@name='miscellaneous']/group/group/field[@name='ready_to_produce']"
+                       position="after">
+                    <field name="version"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="mrp_bom_action_kanban">
+            <field name="name">Bill of Materials</field>
+            <field name="res_model">mrp.bom</field>
+            <field name="view_mode">tree,kanban,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    No bill of materials found. Let's create one!
+                </p>
+                <p>
+                    Bills of materials allow you to define the list of required components
+                    used to make a finished product; through a manufacturing
+                    order or a pack of products.
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>

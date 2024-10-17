@@ -1,0 +1,14 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mrp_eco_approval_template_manager,model_mrp_eco_approval_template,model_mrp_eco_approval_template,plm.group_plm_manager,1,1,1,1
+access_mrp_eco_approval_template_user,model_mrp_eco_approval_template,model_mrp_eco_approval_template,plm.group_plm_user,1,0,0,0
+access_mrp_eco_approval_user,model_mr_eco_approval,model_mrp_eco_approval,plm.group_plm_user,1,1,1,1
+access_mrp_eco_stage_manager,model_mrp_eco_stage,model_mrp_eco_stage,plm.group_plm_manager,1,1,1,1
+access_mrp_eco_stage_user,model_mrp_eco_stage,model_mrp_eco_stage,plm.group_plm_user,1,0,0,0
+access_mrp_eco_bom_change_user,model_mrp_eco_bom_line,model_mrp_eco_bom_change,plm.group_plm_user,1,1,1,1
+access_mrp_eco_routing_change_user,model_mrp_eco_routing_line,model_mrp_eco_routing_change,plm.group_plm_user,1,1,1,1
+access_mrp_eco_tag_user,model_mrp_eco_tag,model_mrp_eco_tag,plm.group_plm_user,1,1,1,1
+access_mrp_eco_tag_manager,model_mrp_eco_tag,model_mrp_eco_tag,plm.group_plm_manager,1,1,1,1
+access_mrp_eco_type_user,model_mrp_eco_type,model_mrp_eco_type,plm.group_plm_user,1,0,0,0
+access_mrp_eco_type_manager,model_mrp_eco_type,model_mrp_eco_type,plm.group_plm_manager,1,1,1,1
+access_mrp_eco_user,model_mrp_eco,model_mrp_eco,plm.group_plm_user,1,1,1,1
+access_product_template_plm_manager,product.template plm_manager,product.model_product_template,plm.group_plm_manager,1,1,1,1
